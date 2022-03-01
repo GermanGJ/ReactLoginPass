@@ -3,7 +3,7 @@ import React from 'react';
 function Card({ post })
 {
     return (
-        <div>
+        <div className='card' >
             <span className='title' >{post.title}</span>
             <img src={ post.img } 
                 alt="" 
