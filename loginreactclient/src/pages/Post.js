@@ -1,10 +1,14 @@
 import React from 'react';
+import { useLocation } from 'react-router'
 import { posts } from "../data";
 
 
 function Post()
 {
-    const post = posts[1];
+    const location = useLocation();
+    const path = location.pathname.split("/")[2];
+
+    const post = posts.find(p => p.id.toString() === path)
 
     return (
         <div className="post">
