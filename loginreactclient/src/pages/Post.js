@@ -8,7 +8,7 @@ function Post()
     const location = useLocation();
     const path = location.pathname.split("/")[2];
 
-    const post = posts.find(p => p.id.toString() === path)
+    const post = posts.find((p) => p.id.toString() === path)
 
     return (
         <div className="post">
