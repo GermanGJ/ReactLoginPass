@@ -12,6 +12,10 @@ passport.use(new GoogleStrategy({
   },
   function(accessToken, refreshToken, profile, done) {
     done(null,profile);
+    //const user = {
+    //  username: profile.displayName,
+    //  avatar: profile.photos[0],
+    //};
   }
 ));
 
